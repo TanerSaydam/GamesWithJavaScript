@@ -125,7 +125,7 @@ function tuglayaCarptiMi() {
     for (let sutun = 0; sutun < tuglaSutunSayisi; sutun++) {
         for (let satir = 0; satir < tuglaSatirSayisi; satir++) {
             const tugla = tuglalar[sutun][satir];
-            if (tugla.status === 1) {
+            if (tugla.status === 1) {                
                 if (x > tugla.x && x < tugla.x + tuglaGenislik && y > tugla.y && y < tugla.y + tuglaYukseklik) {
                     dy = -dy;
                     tugla.status = 0;
